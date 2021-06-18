@@ -109,29 +109,21 @@ main article:nth-child(4) {
   text-decoration: line-through;
 }
 
-.recipe .float-right input {
+input {
   cursor: pointer;
-  border: none;
-}
-
-.recipe .float-right input:checked {
-  color: #6f684c;
-  background-color: transparent;
-  border: none;
 }
 article ul {
   line-height: 2;
   margin-top: 35px;
   font-family: "Pangolin", cursive;
   color: #6f684c;
-  /* font-size: 21px.; */
   width: 300px;
 }
-
-input [type="checkbox"]:checked:after {
-  background-image: url(), linear-gradient(135deg, #b1b6be 0%, #fff 100%);
-  background-color: tomato;
+article  input {
+  color: #6f684c;
+ 
 }
+
 
 .BottomLine {
   display: block;
@@ -146,7 +138,6 @@ input [type="checkbox"]:checked:after {
     width: 100%;;
     
 }
-
 
 .share-recipe .float-left {
     display: flex;
@@ -185,8 +176,8 @@ section div p:last-child {
 }
 
 footer{
-    display: flex;
-    align-items: center;
+   display: flex;
+   align-items: center;
    justify-content: center;
    flex-direction: column;
    color:gray;
@@ -195,6 +186,7 @@ footer{
    font-size: 12px;
    margin-top: 15px;
    margin-bottom: 15px;
+   position:relative;
 }
 footer img{
    display: block;
@@ -202,4 +194,13 @@ footer img{
    margin-bottom: 7px;
 }
 
+footer::before{
+  content: "";
+  position:  absolute ;
+  top: -80%;
+  left:0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #ddd;
+}
 
